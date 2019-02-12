@@ -1,0 +1,6 @@
+* {
+  box-sizing: border-box; }
+
+div {
+  padding: 10px;
+  background: red; }
