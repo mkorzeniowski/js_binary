@@ -51,6 +51,9 @@ header {
   border-radius: 50%;
   box-shadow: inset 2px -2px 2px 1px #999; }
 
+.active {
+  background: orange; }
+
 .classic-clock-wrapper {
   display: flex;
   width: 590px;
