@@ -6,93 +6,106 @@ body {
   margin: 0px;
   padding: 0px;
   background: #282828;
-  height: 100vh;
-  width: 100vw;
   font-family: 'Montserrat';
 }
 
-header {
-  height: 200px;
-  color: #fff;
-  text-align: center;
-  h1{
-    padding: 50px;
-    font-size: 3rem;
+.header{
+  background-color: rgb(97, 97, 97);
+  width: 100%;
+  &__title{
+    text-align: center;
+    color: #fff;
+    padding: 32px;
+    font-size: 2rem;
   }
 }
 
-.heading-line{
-  height: 10px;
-  width: 100vw;
-  background: #230090;
-  transform: translateY(-55px);
+.main{
+  display: flex;
+  height: 90vh;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4f5251;
 }
 
-.clock-wrapper{
+.clock{
+  margin-top: 20px;
   display: flex;
-  width: 800px;
+  // width: 800px;
+  // justify-content: center;
+}
+
+.clock__element{
+  width: 260px;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  margin: 0px auto;
 }
 
-.clock-element-wrapper{
-  width: 200px;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.clock-column{
+.clock__column{
   height: 300px;
-  width: 80px;
-  background: #240090;
+  width: 120px;
+  background: #7395AE;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  box-shadow: 6px -6px 0px 1px #0c0032;
+  &:nth-child(odd){
+    background-color: #8eafc7;
+  }
 }
 //#0c0032
 
-.column-circe {
-  width: 50px;
-  height: 50px;
+.circle {
+  width: 60px;
+  height: 60px;
   background: #fff;
   border-radius: 50%;
-  box-shadow: inset 2px -2px 2px 1px #999;
+  transition: 0.2s all;
 }
 
 .active {
-  background: orange;
+  background: rgb(8, 89, 114);
 }
-.classic-clock-wrapper{
+.classic-clock{
   display: flex;
-  width: 590px;
-  justify-content: space-between;
-  margin: 0px auto;
+  justify-content: space-around;
+  width: 780px;
 }
 
-.classic-box{
+.classic-clock__element{
   height: 100px;
-  width: 170px;
-  background: #240090;
+  width: 240px;
+  background: #557A95;
   // border: 1px solid red;
-  margin: 10px;
   text-align: center;
-  &:first-child{
-    color: red;
-  }
-  p{
-    padding: 10px;
-    color: #fff;
-  }
+  margin-top: 5px;
 }
 
-footer{
-  position: absolute;
-  bottom: 0px;
-  width: 100vw;
+.classic-clock__label{
+  padding: 2px 0px 20px 0px;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.classic-clock__time-value{
+  padding: 20px 0px 2px 0px;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.footer{
+  // position: relative;
+  // bottom: 0px;
+  // width: 100vw;
   // border: 1px solid orange;
   padding: 20px;
   text-align: center;
-  color: #fff;
+  background-color: #B1A296;
+  color: #ebebeb;
+  &__link{
+    color: #ebebeb;
+    text-decoration: none;
+  }
 }

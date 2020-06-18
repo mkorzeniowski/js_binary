@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #282828;
+  font-family: 'Montserrat'; }
+
+.header {
+  background-color: #616161;
+  width: 100%; }
+  .header__title {
+    text-align: center;
+    color: #fff;
+    padding: 32px;
+    font-size: 2rem; }
+
+.main {
+  display: flex;
+  height: 90vh;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4f5251; }
+
+.clock {
+  margin-top: 20px;
+  display: flex; }
+
+.clock__element {
+  width: 260px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.clock__column {
+  height: 300px;
+  width: 120px;
+  background: #7395AE;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  .clock__column:nth-child(odd) {
+    background-color: #8eafc7; }
+
+.circle {
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.2s all; }
+
+.active {
+  background: #085972; }
+
+.classic-clock {
+  display: flex;
+  justify-content: space-around;
+  width: 780px; }
+
+.classic-clock__element {
+  height: 100px;
+  width: 240px;
+  background: #557A95;
+  text-align: center;
+  margin-top: 5px; }
+
+.classic-clock__label {
+  padding: 2px 0px 20px 0px;
+  font-size: 1.4rem;
+  color: #fff; }
+
+.classic-clock__time-value {
+  padding: 20px 0px 2px 0px;
+  color: #fff;
+  font-size: 2rem; }
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #B1A296;
+  color: #ebebeb; }
+  .footer__link {
+    color: #ebebeb;
+    text-decoration: none; }

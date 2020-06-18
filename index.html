@@ -1,82 +1,79 @@
 <!DOCTYPE html>
-<html>
-
-
-  <head>
-    <meta charset="utf-8">
-    <title> empty ready file </title>
-    <!--build:css css/main-min.css -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- endbuild -->
-  </head>
-  <body>
-    <header>
-      <h1> Binnary Clock </h1>
-      <div class="heading-line"></div>
-    </header>
-    <div class="clock-wrapper">
-      <div class="clock-element-wrapper">
-        <div class="clock-column">
-          <div class="column-circe"></div>
-          <div class="column-circe"></div>
-          <div class="column-circe"></div>
-          <div class="column-circe"></div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binary clock</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="main">
+  <header class="header">
+    <h1 class="header__title">Binnary Clock</h1>
+  </header>
+    <div class="clock">
+      <div class="clock__element">
+        <div class="clock__column">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
         </div>
-        <div class="clock-column">
-          <div class="column-circe active"></div>
-          <div class="column-circe"></div>
-          <div class="column-circe"></div>
-          <div class="column-circe"></div>
+        <div class="clock__column">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
         </div>
       </div>
-      <div class="clock-element-wrapper">
-        <div class="clock-column">
-          <div class="column-circe"></div>
-          <div class="column-circe"></div>
-          <div class="column-circe"></div>
-          <div class="column-circe"></div>
+      <div class="clock__element">
+        <div class="clock__column">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
         </div>
-        <div class="clock-column">
-          <div class="column-circe"></div>
-          <div class="column-circe"></div>
-          <div class="column-circe"></div>
-          <div class="column-circe"></div>
+        <div class="clock__column">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
         </div>
       </div>
-      <div class="clock-element-wrapper">
-        <div class="clock-column">
-          <div class="column-circe"></div>
-          <div class="column-circe"></div>
-          <div class="column-circe"></div>
-          <div class="column-circe"></div>
+      <div class="clock__element">
+        <div class="clock__column">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
         </div>
-        <div class="clock-column">
-          <div class="column-circe"></div>
-          <div class="column-circe"></div>
-          <div class="column-circe"></div>
-          <div class="column-circe"></div>
+        <div class="clock__column">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
         </div>
       </div>
     </div>
-    <div class="classic-clock-wrapper">
-      <div class="classic-box">
-        <p> Hours </p>
-        <p id="hours"> 12</p>
+    <!-- classic clock box -->
+    <div class="classic-clock">
+      <div class="classic-clock__element">
+        <p class="classic-clock__time-value" id="hours"> 12</p>
+        <p class="classic-clock__label"> Hours </p>
       </div>
-      <div class="classic-box">
-        <p> Minutes </p>
-        <p id="minutes"> 32</p>
+      <div class="classic-clock__element">
+        <p class="classic-clock__time-value" id="minutes"> 12</p>
+        <p class="classic-clock__label"> Minutes </p>
       </div>
-      <div class="classic-box">
-        <p> Seconds </p>
-        <p id="seconds"> 02</p>
+      <div class="classic-clock__element">
+        <p class="classic-clock__time-value" id="seconds"> 12</p>
+        <p class="classic-clock__label"> Seconds </p>
       </div>
     </div>
-    <footer>
-        <p>Created By mkorzeniowski</p>
-        <p><a href=""> Visit my website</a></p>
+    </main>
+    <footer class="footer">
+        <p><a href="https://mkorzeniowski.pl" class="footer__link"> Created by mkorzeniowski.pl</a></p>
     </footer>
-  <script type="text/javascript" src="js/script1.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </html>

@@ -1,7 +1,7 @@
 
 
 // array of the all clock-colum
-var clock = document.querySelectorAll('.clock-column');
+var clock = document.querySelectorAll('.clock__column');
 
 // main function
 
